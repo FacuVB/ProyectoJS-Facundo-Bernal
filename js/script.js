@@ -26,7 +26,7 @@ console.log(resto); */
 
 //DESAFIO 2
 
-alert("El nombre de usuario es: coder");
+/* alert("El nombre de usuario es: coder");
 alert("La contraseña es javascript2021");
 
 let user = prompt("Por favor ingrese su nombre de ususario");
@@ -44,4 +44,34 @@ if (user == "CODER" || user == "coder") {
     alert("No ingreso ningun nombre de usuario");
 } else {
     alert("Usuario incorrecto");
-}
+} */
+
+
+//===================================================================//
+
+
+//DESAFIO 3
+
+/* El siguiente algoritmo simula el acumulador de un carrito de compras. 
+El usuario podra ingresar 2 valores posibles, Vinilos o CD. 
+Al finalizar el programa, el mismo arrojara la cantidad de veces que se selecciono cada item y el total de unidades") */
+
+let items;
+let cantidadVinilo = 0;
+let cantidadCd = 0;
+let total = cantidadVinilo + cantidadCd;
+do {
+    items = prompt("Que formato vas a llevar, Vinilo o Cd");
+    if (items.toLocaleLowerCase() == "vinilo") {
+        cantidadVinilo++;
+    } else if (items.toLocaleLowerCase() == "cd") {
+        cantidadCd++;
+    } else {
+        alert("El formato no es correcto")
+    }
+
+} while (confirm("Vas a llevar algo mas"));
+
+alert(`Llevas ${cantidadVinilo} vinilo/s`);
+alert(`Llevas ${cantidadCd} cd/s`);
+alert(`La cantidad total es de ${cantidadCd + cantidadVinilo} unidades`)
