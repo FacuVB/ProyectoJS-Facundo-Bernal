@@ -56,7 +56,7 @@ if (user == "CODER" || user == "coder") {
 El usuario podra ingresar 2 valores posibles, Vinilos o CD. 
 Al finalizar el programa, el mismo arrojara la cantidad de veces que se selecciono cada item y el total de unidades") */
 
-let items;
+/* let items;
 let cantidadVinilo = 0;
 let cantidadCd = 0;
 let total = cantidadVinilo + cantidadCd;
@@ -74,4 +74,45 @@ do {
 
 alert(`Llevas ${cantidadVinilo} vinilo/s`);
 alert(`Llevas ${cantidadCd} cd/s`);
-alert(`La cantidad total es de ${cantidadCd + cantidadVinilo} unidades`)
+alert(`La cantidad total es de ${cantidadCd + cantidadVinilo} unidades`) */
+
+//===================================================================//
+
+
+//DESAFIO 4
+
+
+const subtotal = (a, b) => a * b;
+const cd = 6500;
+const vinilo = 12650;
+const sumar = (subtotalVinilos, subtotalCd) => subtotalVinilos + subtotalCd;
+let items;
+let cantidadVinilo = 0;
+let cantidadCd = 0;
+
+function carrito() {
+
+    do {
+        items = prompt("Que formato vas a llevar, Vinilo o Cd");
+        if (items.toLocaleLowerCase() == "vinilo") {
+            cantidadVinilo++;
+        } else if (items.toLocaleLowerCase() == "cd") {
+            cantidadCd++;
+        } else {
+            alert("El formato no es correcto")
+        }
+
+    } while (confirm("Vas a llevar algo mas"));
+
+    alert(`Llevas ${cantidadVinilo} vinilo/s`);
+    alert(`Llevas ${cantidadCd} cd/s`);
+
+    let subtotalVinilos = subtotal(cantidadVinilo, vinilo);
+    alert(`El precio por la compra de ${cantidadVinilo} vinilo/s es de $${subtotalVinilos}`)
+    let subtotalCd = subtotal(cantidadCd, cd);
+    alert(`El precio por la compra de ${cantidadCd} cd/s es de $${subtotalCd}`)
+    let precioFinal = sumar(subtotalVinilos, subtotalCd)
+    alert(`El precio final de la compra es de ${precioFinal}`)
+}
+
+carrito();
