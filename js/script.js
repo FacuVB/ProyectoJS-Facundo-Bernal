@@ -148,9 +148,9 @@ class producto {
         } else if (cuota == 3) {
             alert("El monto a pagar en 3 cuotas es de " + parseInt((this.precio * this.cantidad) / 3));
         } else if (cuota == 6) {
-            alert("El monto a pagar en 3 cuotas es de " + parseInt((this.precio * this.cantidad) / 6));
+            alert("El monto a pagar en 6 cuotas es de " + parseInt((this.precio * this.cantidad) / 6));
         } else if (cuota == 12) {
-            alert("El monto a pagar en 3 cuotas es de " + parseInt((this.precio * this.cantidad) / 12));
+            alert("El monto a pagar en 12 cuotas es de " + parseInt((this.precio * this.cantidad) / 12));
         } else {
             alert("Esa opcion no esta disponible")
         }
