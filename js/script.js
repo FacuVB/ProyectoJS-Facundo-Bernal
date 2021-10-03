@@ -82,7 +82,7 @@ alert(`La cantidad total es de ${cantidadCd + cantidadVinilo} unidades`) */
 //DESAFIO 4
 
 
-const subtotal = (a, b) => a * b;
+/* const subtotal = (a, b) => a * b;
 const cd = 6500;
 const vinilo = 12650;
 const sumar = (subtotalVinilos, subtotalCd) => subtotalVinilos + subtotalCd;
@@ -115,4 +115,54 @@ function carrito() {
     alert(`El precio final de la compra es de ${precioFinal}`)
 }
 
-carrito();
+carrito(); */
+
+//===================================================================//
+
+
+//DESAFIO 5
+
+class producto {
+    constructor(formato, precio, cantidad) {
+        this.formato = formato,
+            this.precio = precio,
+            this.cantidad = cantidad
+    }
+    cantidadItems() {
+        alert("Llevas " + this.cantidad + " CD/s")
+    }
+
+    iva() {
+        this.precio = this.precio * 1.21;
+    }
+
+    totalCompra() {
+        alert("El total de la compra es de " + this.precio * this.cantidad)
+    }
+
+    pagoCuotas() {
+        let cuota = prompt("En cuantas cuotas vas a pagar: 1, 3, 6 o 12")
+
+        if (cuota == 1) {
+            alert("El monto a pagar en 1 cuota es de " + this.precio * this.cantidad);
+        } else if (cuota == 3) {
+            alert("El monto a pagar en 3 cuotas es de " + parseInt((this.precio * this.cantidad) / 3));
+        } else if (cuota == 6) {
+            alert("El monto a pagar en 3 cuotas es de " + parseInt((this.precio * this.cantidad) / 6));
+        } else if (cuota == 12) {
+            alert("El monto a pagar en 3 cuotas es de " + parseInt((this.precio * this.cantidad) / 12));
+        } else {
+            alert("Esa opcion no esta disponible")
+        }
+    }
+}
+
+let cantidad = prompt("Cuantos Cd/s vas a llevar")
+
+const producto1 = new producto("CD", 6500, cantidad);
+
+
+producto1.cantidadItems();
+producto1.iva();
+producto1.totalCompra();
+producto1.pagoCuotas();
