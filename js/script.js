@@ -1,171 +1,6 @@
-//DESAFIO 1
-
-/* let numero1 = prompt("Ingresá un número");
-let numero2 = prompt("Ingresá otro número");
-
-let suma = parseInt(numero1) + parseInt(numero2);
-let resta = parseInt(numero1) - parseInt(numero2);
-let multiplicacion = parseInt(numero1) * parseInt(numero2);
-let division = parseInt(numero1) / parseInt(numero2);
-let resto = parseInt(numero1) % parseInt(numero2);
-
-alert("El resultado de la suma es " + suma);
-alert("El resultado de la resta es " + resta);
-alert("El resultado de la multiplicacion es " + multiplicacion);
-alert("El resultado de la division es " + division);
-alert("El resultado del resto es " + resto);
-
-console.log(suma);
-console.log(resta);
-console.log(multiplicacion);
-console.log(division);
-console.log(resto); */
-
-//===================================================================//
-
-//DESAFIO 2
-
-/* alert("El nombre de usuario es: coder");
-alert("La contraseña es javascript2021");
-
-let user = prompt("Por favor ingrese su nombre de ususario");
-
-if (user == "CODER" || user == "coder") {
-    let pass = prompt("Por favor ingrese su contraseña");
-    if (pass === "javascript2021") {
-        alert("Bienvenido");
-    } else if (pass == "") {
-        alert("No ingreso ninguna contraseña");
-    } else {
-        alert("Contraseña incorrecta");
-    }
-} else if (user == "") {
-    alert("No ingreso ningun nombre de usuario");
-} else {
-    alert("Usuario incorrecto");
-} */
-
-//===================================================================//
-
-//DESAFIO 3
-
-/* El siguiente algoritmo simula el acumulador de un carrito de compras. 
-El usuario podra ingresar 2 valores posibles, Vinilos o CD. 
-Al finalizar el programa, el mismo arrojara la cantidad de veces que se selecciono cada item y el total de unidades") */
-
-/* let items;
-let cantidadVinilo = 0;
-let cantidadCd = 0;
-let total = cantidadVinilo + cantidadCd;
-do {
-    items = prompt("Que formato vas a llevar, Vinilo o Cd");
-    if (items.toLocaleLowerCase() == "vinilo") {
-        cantidadVinilo++;
-    } else if (items.toLocaleLowerCase() == "cd") {
-        cantidadCd++;
-    } else {
-        alert("El formato no es correcto")
-    }
-
-} while (confirm("Vas a llevar algo mas"));
-
-alert(`Llevas ${cantidadVinilo} vinilo/s`);
-alert(`Llevas ${cantidadCd} cd/s`);
-alert(`La cantidad total es de ${cantidadCd + cantidadVinilo} unidades`) */
-
-//===================================================================//
-
-//DESAFIO 4
-
-/* const subtotal = (a, b) => a * b;
-const cd = 6500;
-const vinilo = 12650;
-const sumar = (subtotalVinilos, subtotalCd) => subtotalVinilos + subtotalCd;
-let items;
-let cantidadVinilo = 0;
-let cantidadCd = 0;
-
-function carrito() {
-
-    do {
-        items = prompt("Que formato vas a llevar, Vinilo o Cd");
-        if (items.toLocaleLowerCase() == "vinilo") {
-            cantidadVinilo++;
-        } else if (items.toLocaleLowerCase() == "cd") {
-            cantidadCd++;
-        } else {
-            alert("El formato no es correcto")
-        }
-
-    } while (confirm("Vas a llevar algo mas"));
-
-    alert(`Llevas ${cantidadVinilo} vinilo/s`);
-    alert(`Llevas ${cantidadCd} cd/s`);
-
-    let subtotalVinilos = subtotal(cantidadVinilo, vinilo);
-    alert(`El precio por la compra de ${cantidadVinilo} vinilo/s es de $${subtotalVinilos}`)
-    let subtotalCd = subtotal(cantidadCd, cd);
-    alert(`El precio por la compra de ${cantidadCd} cd/s es de $${subtotalCd}`)
-    let precioFinal = sumar(subtotalVinilos, subtotalCd)
-    alert(`El precio final de la compra es de ${precioFinal}`)
-}
-
-carrito(); */
-
-//===================================================================//
-
-//DESAFIO 5
-
-/*class producto {
-    constructor(formato, precio, cantidad) {
-        this.formato = formato,
-            this.precio = precio,
-            this.cantidad = cantidad
-    }
-    cantidadItems() {
-        alert("Llevas " + this.cantidad + " CD/s")
-    }
-
-    iva() {
-        this.precio = this.precio * 1.21;
-    }
-
-    totalCompra() {
-        alert("El total de la compra es de " + this.precio * this.cantidad)
-    }
-
-    pagoCuotas() {
-        let cuota = prompt("En cuantas cuotas vas a pagar: 1, 3, 6 o 12")
-
-        if (cuota == 1) {
-            alert("El monto a pagar en 1 cuota es de " + this.precio * this.cantidad);
-        } else if (cuota == 3) {
-            alert("El monto a pagar en 3 cuotas es de " + parseInt((this.precio * this.cantidad) / 3));
-        } else if (cuota == 6) {
-            alert("El monto a pagar en 6 cuotas es de " + parseInt((this.precio * this.cantidad) / 6));
-        } else if (cuota == 12) {
-            alert("El monto a pagar en 12 cuotas es de " + parseInt((this.precio * this.cantidad) / 12));
-        } else {
-            alert("Esa opcion no esta disponible")
-        }
-    }
-}
-
-let cantidad = prompt("Cuantos Cd/s vas a llevar")
-
-const producto1 = new producto("CD", 6500, cantidad);
-
-
-producto1.cantidadItems();
-producto1.iva();
-producto1.totalCompra();
-producto1.pagoCuotas();*/
-
-//===================================================================//
-
 //DESAFIO 6
 
-let listaProductos = [{
+/* let listaProductos = [{
         id: 1,
         artist: "The Rolling Stones",
         album: "Blue & Lenoseme",
@@ -472,8 +307,8 @@ if (search.toLowerCase() === "genero") {
     }
 } else if (search.toLowerCase() === "artista") {
     search = listaProductos.filter((obj) => obj.artist);
-    console.log(search);
-}
+    console.log(search); 
+}*/
 
 //===================================================================//
 //======================DESAFIO COMPLEMENTARIO======================//
@@ -567,3 +402,300 @@ alert("Agregaste los siguientes albumes al carrito : " + carrito);
 console.log(carrito);
 alert("El total de la compra es de : " + "$" + total);
 console.log(total); */
+
+
+//===================================================================//
+
+
+
+//=========================================DOM=========================================//
+const baseDeDatos = [{
+        id: 1,
+        artist: "Rolling Stones",
+        album: "Blue & Lenoseme",
+        genre: "Rock",
+        year: 2016,
+        format: "Cd",
+        price: 12650,
+        img: "https://e-cdns-images.dzcdn.net/images/cover/5691be0453d3b0a3733a7b59503b1399/500x500.jpg"
+    },
+    {
+        id: 2,
+        artist: "The Beatles",
+        album: "Abbey Road",
+        genre: "Rock",
+        year: 2019,
+        format: "Vinilo",
+        price: 12650,
+        img: "https://img.discogs.com/Ujurc3xA-vIlBU_-4jZh7xtIhm4=/fit-in/500x500/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-14190454-1569566853-4916.jpeg.jpg"
+    },
+    {
+        id: 3,
+        artist: "The Killers",
+        album: "Pressure Machine",
+        genre: "Rock",
+        year: 2021,
+        format: "Cd",
+        price: 3000,
+        img: "https://cdns-images.dzcdn.net/images/cover/244debd9e3ee42a11d32d491232f5837/500x500.jpg"
+    },
+    {
+        id: 4,
+        artist: "Cerati",
+        album: "Fuerza Natural",
+        genre: "Rock Nacional",
+        year: 2009,
+        format: "Cd",
+        price: 6250,
+        img: "https://cdns-images.dzcdn.net/images/cover/633ff890de3f772c2bb6f94c56798db7/500x500.jpg"
+    },
+    {
+        id: 5,
+        artist: "Ciro y los persas",
+        album: "Guerras",
+        genre: "Rock Nacional",
+        year: 2020,
+        format: "Cd",
+        price: 4999,
+        img: "https://cdns-images.dzcdn.net/images/cover/321d6e39cdea1daac0594d14fcb70e38/500x500.jpg"
+
+    },
+    {
+        id: 6,
+        artist: "Divididos",
+        album: "Haciendo cosas raras",
+        genre: "Rock Nacional",
+        year: 2018,
+        format: "Cd",
+        price: 3400,
+        img: "https://www.cmtv.com.ar/tapas-cd/0616233001591605764.jpg"
+    },
+    {
+        id: 7,
+        artist: "ACDC",
+        album: "Live River Plate 2009",
+        genre: "Rock",
+        year: 2011,
+        format: "CD",
+        price: 2360,
+        img: "https://http2.mlstatic.com/D_NQ_NP_962422-MLA31077499517_062019-O.jpg"
+    },
+    {
+        id: 8,
+        artist: "Metallica",
+        album: "S&M2",
+        genre: "Rock",
+        year: 2020,
+        format: "Cd",
+        price: 3077,
+        img: "https://cdns-images.dzcdn.net/images/cover/8cb33b8b095e3e1b5dbe841618f37021/500x500.jpg"
+    },
+    {
+        id: 9,
+        artist: "Evanescence",
+        album: " The Bitter Truth",
+        genre: "Rock",
+        year: 2021,
+        format: "Cd",
+        price: 8750,
+        img: "https://cdns-images.dzcdn.net/images/cover/f3234ba1cbf782a23976ccd2a7a85f66/500x500.jpg"
+    },
+    {
+        id: 10,
+        artist: "Avicii",
+        album: "True",
+        genre: "EDM",
+        year: 2013,
+        format: "Cd",
+        price: 4310,
+        img: "https://http2.mlstatic.com/D_NQ_NP_611847-MLA27295582898_052018-O.jpg"
+    },
+    {
+        id: 11,
+        artist: "Marshmello",
+        album: " Shockwave",
+        genre: "EDM",
+        year: 2021,
+        format: "Cd",
+        price: 4550,
+        img: "https://cdns-images.dzcdn.net/images/cover/0f71884bbdeb738be96a5fcc49f373ec/500x500.jpg"
+    },
+    {
+        id: 12,
+        artist: "Steve Aoki",
+        album: "Neon Future IV",
+        genre: "EDM",
+        year: 2020,
+        format: "Cd",
+        price: 1600,
+        img: "https://cdns-images.dzcdn.net/images/cover/a9f3be44e22ea48b8b9af0a966c789ef/500x500.jpg"
+    },
+    {
+        id: 13,
+        artist: "Drake",
+        album: "Certified Lover Boy",
+        genre: "Hip Hop",
+        year: 2021,
+        format: "Cd",
+        price: 2990,
+        img: "https://cdns-images.dzcdn.net/images/cover/ea8f80f2edb20885ac8aed8751716794/500x500.jpg"
+    },
+    {
+        id: 14,
+        artist: "Doja Cat",
+        album: "Planet Her",
+        genre: "Hip Hop",
+        year: 2021,
+        format: "Cd",
+        price: 3450,
+        img: "https://lastfm.freetls.fastly.net/i/u/500x500/d1619e7707eb9f63884cebce1f76b382.jpg"
+    },
+    {
+        id: 15,
+        artist: "Megan Thee Stallion",
+        album: "Good News",
+        genre: "Hip Hop",
+        year: 2020,
+        format: "Cd",
+        price: 3250,
+        img: "https://cdns-images.dzcdn.net/images/cover/73acf837b4856dc92eb79035de2cc18e/500x500.jpg"
+    },
+    {
+        id: 16,
+        artist: "Maria Becerra",
+        album: "Animal",
+        genre: "Latin",
+        year: 2021,
+        format: "Cd",
+        price: 5400,
+        img: "https://www.cmtv.com.ar/tapas-cd/0020874001630276641.jpg"
+    },
+    {
+        id: 17,
+        artist: "Bad Bunny",
+        album: "El ultimo tour del ...",
+        genre: "Latin",
+        year: 2019,
+        format: "Cd",
+        price: 3600,
+        img: "https://m.media-amazon.com/images/I/51VdkSx00DL._UXNaN_FMjpg_QL85_.jpg"
+    },
+    {
+        id: 18,
+        artist: "J Balvin",
+        album: "Summer Vacation",
+        genre: "latin",
+        year: 2020,
+        format: "Cd",
+        price: 4300,
+        img: "https://cdns-images.dzcdn.net/images/cover/f61dcdb7532e66da1845d485a48957bf/500x500.jpg"
+    },
+    {
+        id: 19,
+        artist: "Dua Lipa",
+        album: "Future Nostalgia",
+        genre: "Pop",
+        year: 2020,
+        format: "Vinilo",
+        price: 12650,
+        img: "https://http2.mlstatic.com/D_NQ_NP_902444-MLA41062427273_032020-O.jpg"
+    },
+    {
+        id: 20,
+        artist: "Ariana Grande",
+        album: " My Everything",
+        genre: "Pop",
+        year: 2014,
+        format: "Vinilo",
+        price: 12650,
+        img: "https://http2.mlstatic.com/D_NQ_NP_861012-MLA29725440527_032019-O.jpg"
+    },
+    {
+        id: 21,
+        artist: "Olivia Rodrigo",
+        album: "Sour",
+        genre: "Pop",
+        year: 2021,
+        format: "Cd",
+        price: 4050,
+        img: "https://http2.mlstatic.com/D_NQ_NP_988214-MLA47194530167_082021-O.jpg"
+    },
+    {
+        id: 22,
+        artist: "Blackpink",
+        album: "The Album",
+        genre: "Kpop",
+        year: 2020,
+        format: "Cd",
+        price: 7990,
+        img: "https://jenesaispop.com/wp-content/uploads/2020/11/blackpink-thealbum.jpg"
+    },
+    {
+        id: 23,
+        artist: "BTS",
+        album: "Butter",
+        genre: "Kpop",
+        year: 2021,
+        format: "Cd",
+        price: 6990,
+        img: "https://cdns-images.dzcdn.net/images/cover/0cc1c0ada6f9aab8128e7d8a7d61aec2/500x500.jpg"
+    },
+    {
+        id: 24,
+        artist: "TXT",
+        album: "The chaos chapter: F or E",
+        genre: "Kpop",
+        year: 2021,
+        format: "Cd",
+        price: 7990,
+        img: "https://m.media-amazon.com/images/I/61Kdu5+crQL._SS500_.jpg"
+    },
+];
+
+const domItems = document.querySelector('#items');
+
+function renderizarProductos() {
+    baseDeDatos.forEach((info) => {
+
+        //ESTRUCTURA
+        const miNodo = document.createElement('div');
+        miNodo.classList.add('card');
+        miNodo.style.width = "18rem"
+
+        //BODY
+        const miNodoCardBody = document.createElement('div');
+        miNodoCardBody.classList.add('card-body');
+
+        //TITULO
+        const miNodoTitulo = document.createElement('h5');
+        miNodoTitulo.classList.add('card-title');
+        miNodoTitulo.textContent = info.artist + " | " + info.album;
+
+        //IMAGEN
+        const miNodoImagen = document.createElement('img');
+        miNodoImagen.classList.add('img-fluid');
+        miNodoImagen.setAttribute('src', info.img);
+
+        //PRECIO
+        const miNodoPrecio = document.createElement('p');
+        miNodoPrecio.classList.add('card-text');
+        miNodoPrecio.textContent = "$ " + info.price
+
+        //BOTON
+        const miNodoBoton = document.createElement('button');
+        miNodoBoton.classList.add('btn');
+        miNodoBoton.style.backgroundColor = "#422f75"
+        miNodoBoton.style.color = "#fffff"
+        miNodoBoton.textContent = "Comprar";
+
+        //INSERTAMOS
+        miNodoCardBody.appendChild(miNodoImagen);
+        miNodoCardBody.appendChild(miNodoTitulo);
+        miNodoCardBody.appendChild(miNodoPrecio);
+        miNodoCardBody.appendChild(miNodoBoton);
+        miNodo.appendChild(miNodoCardBody);
+        domItems.appendChild(miNodo);
+    })
+}
+
+renderizarProductos()

@@ -9,8 +9,18 @@ header {
 img.logo {
     width: 39%;
     position: relative;
-    bottom: 27rem;
+    bottom: 22rem;
     left: 28rem;
+}
+
+.btn {
+    color: white;
+}
+
+.btn.btn-outline {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #422f75;
 }
 
 a.boton {
@@ -99,6 +109,7 @@ h2 {
     padding-right: 0;
 }
 
+.btn,
 h1,
 h2,
 h3,
@@ -120,9 +131,9 @@ a {
 }
 
 .footerColor {
-    background-color: #C0B3EC;
+    background-color: #493482;
 }
 
 footer.page-footer .footer-copyright {
-    background-color: #422f75;
+    background-color: #1E1536;
 }
