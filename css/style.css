@@ -1,16 +1,10 @@
+/* GENERALES */
 * {
     margin: 0;
 }
 
-header {
-    height: 22rem;
-}
-
-img.logo {
-    width: 39%;
-    position: relative;
-    bottom: 22rem;
-    left: 28rem;
+a.boton {
+    color: #000;
 }
 
 .btn {
@@ -23,17 +17,37 @@ img.logo {
     background-color: #422f75;
 }
 
-a.boton {
-    color: #000;
+.btn,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p,
+a {
+    font-family: 'Oswald', sans-serif;
 }
 
-.titleSlider {
-    font-size: 75px;
+/* BODY */
+body{
+    background-color: black;
 }
 
-.slider {
-    font-size: 55px;
+/* HEADER */
+header {
+    height: 22rem;
 }
+
+img.logo {
+    width: 39%;
+    position: relative;
+    bottom: 22rem;
+    left: 28rem;
+}
+
+/* EFECTOS */
 
 .hvr-sweep-to-right {
     display: inline-block;
@@ -56,7 +70,7 @@ a.boton {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #422f75;
+    background: white;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -72,7 +86,7 @@ a.boton {
 .hvr-sweep-to-right:hover,
 .hvr-sweep-to-right:focus,
 .hvr-sweep-to-right:active {
-    color: white;
+    color: black;
 }
 
 .hvr-sweep-to-right:hover:before,
@@ -98,42 +112,36 @@ h2 {
     text-align: center;
 }
 
-.carousel {
-    max-width: 65%;
+
+i.fas{
+    color: white;
 }
 
-.article {
-    margin-left: 5rem;
-    box-shadow: 12px 10px 6px -6px rgba(0, 0, 0, 0.75);
-    height: 36.5rem;
-    padding-right: 0;
+.filter{
+    display: none;
 }
 
-.btn,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-p,
-a {
-    font-family: 'Oswald', sans-serif;
+.list-group-item-carrito{
+    background-color: white;
 }
-
-.list-group-item.active {
-    background-color: #422f75;
-}
+/* FOOTER */
 
 .list-group-item {
     border-style: solid 1px black;
+    background-color:#422f75 ;
+}
+
+.list-group-item.active {
+    background-color: white;
+    color:#422f75 ;
+}
+
+a.list-group-item{
+    color: white;
 }
 
 .footerColor {
-    background-color: #493482;
+    background: #000000;
+    background: linear-gradient(180deg,#000000 0%, #422f75 80%);
 }
 
-footer.page-footer .footer-copyright {
-    background-color: #1E1536;
-}
