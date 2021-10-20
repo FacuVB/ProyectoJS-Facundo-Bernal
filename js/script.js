@@ -10,7 +10,7 @@ const domItems = document.querySelector('#items');
 const domCarrito = document.querySelector('#carrito');
 const domTotal = document.querySelector('#total');
 const domBorrarCarrito = document.querySelector('#borrarCarrito');
-
+const miLocalStorage = window.localStorage;
 
 //========================FUNCIONES========================//
 //BUSCADOR
@@ -85,7 +85,9 @@ function agregarProducto(e) {
 
   renderizarCarrito();
 
+  guardarCarritoEnLocalStorage();
 
+  console.log(carrito);
 }
 
 // RENDERIZAR CARRITO
@@ -140,6 +142,7 @@ function borrarItemCarrito(e) {
 
   calcularTotal();
 
+  guardarCarritoEnLocalStorage();
 
 }
 
@@ -168,13 +171,27 @@ function borrarCarrito() {
 
   calcularTotal();
 
+  localStorage.clear();
 }
 
+function guardarCarritoEnLocalStorage () {
+  miLocalStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+function cargarCarritoDeLocalStorage () {
+
+  if (miLocalStorage.getItem('carrito') !== null) {
+
+      carrito = JSON.parse(miLocalStorage.getItem('carrito'));
+  }
+}
 
 //INICIALIZACION 
 
 domBorrarCarrito.addEventListener('click', borrarCarrito);
 
+cargarCarritoDeLocalStorage();
 renderizarProductos();
 calcularTotal();
 renderizarCarrito();
+
